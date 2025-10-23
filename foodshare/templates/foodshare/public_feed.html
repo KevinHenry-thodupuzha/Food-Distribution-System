@@ -6,7 +6,7 @@
 <div class="hero-section">
     <div class="container text-center">
         <h1 class="display-4 fw-bold mb-3">
-            <i class="fas fa-heart"></i> Share Food, Save Lives
+            <i class="fas fa-heart"></i> Surplus Food Saver
         </h1>
         <p class="lead mb-4">Connect with your community to share surplus food and reduce waste</p>
         {% if not user.is_authenticated %}
@@ -45,7 +45,7 @@
                         {% elif post.price == 0 %}
                         <span class="badge bg-success">FREE</span>
                         {% else %}
-                        <span class="badge bg-info">${{ post.price }}</span>
+                        <span class="badge bg-info">Rs {{ post.price }}</span>
                         {% endif %}
                     </h5>
                     <p class="card-text">

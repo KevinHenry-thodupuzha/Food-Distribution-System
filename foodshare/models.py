@@ -9,7 +9,7 @@ class FoodPost(models.Model):
     donor_name = models.CharField(max_length=100)
     location = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, help_text="Price in dollars (0.00 for free)")
+    price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, help_text="Price in Rupees (0.00 for free)")
     is_available = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
